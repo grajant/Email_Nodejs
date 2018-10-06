@@ -22,7 +22,7 @@ const email = new EmailTemplate({
     message: {
         from: 'capsulasexpressnutresa@pragma.com.co'
     },
-    send: false,
+    send: true,
     transport: transporter,
     views: {
         options: {
@@ -34,9 +34,10 @@ const email = new EmailTemplate({
 const sendEmail = async () => {
     try {
         const result = await email.send({
-            template: 'welcome',
+            template: 'tables',
             message: {
-                to: ['glego40_@hotmail.com', 'guillo.grajales@gmail.com']
+                //to: ['glego40_@hotmail.com', 'guillo.grajales@gmail.com']
+                to: 'glego40_@hotmail.com'
             },
             locals: {
                 firstName: 'Guillermo',

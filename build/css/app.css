@@ -1,66 +1,94 @@
-/** Font loading **/
-@font-face {
-  font-family: 'Poppins';
-  src: url("../../font/Poppins-Light.ttf");
-  font-weight: 300; }
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../../font/Poppins-Regular.ttf");
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../../font/Poppins-Medium.ttf");
-  font-weight: 500; }
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../../font/Poppins-SemiBold.ttf");
-  font-weight: 600; }
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("../../font/Poppins-Bold.ttf");
-  font-weight: 700; }
-
-.mail-container {
-  width: 600px;
-  max-width: 100%;
+/* ----------------------
+/           Basics
+-------------------------*/
+body {
   margin: 0;
   padding: 0;
-  background-color: #222;
-  background-image: -webkit-radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111);
-  background-image: radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111);
+  min-width: 100%;
+  background-color: #ffffff; }
+
+table {
+  border: none;
+  border-spacing: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white; }
+
+td {
+  padding: 0; }
+
+img {
+  border: 0; }
+
+/*----------------------------
+/*  Mail structure *
+/*---------------------------*/
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+.mail-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
   text-align: center;
   color: white;
-  font-family: Poppins, sans-serif;
-  box-sizing: border-box; }
+  background: #fff; }
 
-.mail-container * {
-  box-sizing: border-box;
-  font-family: "Poppins", 'Segoe UI', sans-serif; }
-
-.logo-container {
-  width: 100%; }
-  .logo-container .img-logo {
-    width: 20%;
-    height: auto;
-    margin: 0 10% 0 70%; }
-
-.header {
-  position: relative;
-  background-image: url("https://s3.amazonaws.com/colcafepdnimagenes/01.familia.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.outer {
+  margin: 0 auto;
   width: 100%;
-  height: 0;
-  padding-top: 76%;
-  border-radius: 0 0 50% 50%; }
-  .header .img-sello {
-    width: 35%;
-    height: auto;
-    margin: -20% auto 0; }
+  max-width: 600px;
+  background-color: #222;
+  background-image: -webkit-radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111);
+  background-image: radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111); }
+  .outer .inner {
+    padding: 10px; }
+
+.one-column, .two-column, .three-column {
+  border-top: 1px solid; }
+  .one-column .text, .two-column .text, .three-column .text {
+    font-size: 14px; }
+  .one-column h1, .two-column h1, .three-column h1 {
+    font-size: 22px; }
+  .one-column h2, .two-column h2, .three-column h2 {
+    font-size: 20px; }
+  .one-column .contents, .two-column .contents, .three-column .contents {
+    width: 100%; }
+    .one-column .contents td, .two-column .contents td, .three-column .contents td {
+      text-align: center; }
+
+.two-column {
+  text-align: center;
+  font-size: 0; }
+  .two-column .column {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top; }
+    .two-column .column img {
+      width: 100%;
+      height: auto; }
+
+.three-column {
+  text-align: center;
+  font-size: 0;
+  padding: 16px 0; }
+  .three-column .column {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top; }
+  .three-column .contents td {
+    width: 200px; }
+
+/*----------------------------------------**
+/  Normar styles
+/---------------------------------------- */
+.img-banner {
+  width: 100%;
+  height: auto; }
 
 .footer {
   border-top: 2px solid #92b91e;
@@ -157,21 +185,18 @@
     border-radius: 20px;
     background: #92b91e;
     transform: translateY(-50%); }
-  .main-container .final-row .capsule {
-    width: 90%;
-    height: auto;
-    padding: 4px 4px 16px;
-    margin: 0 auto;
-    background: #92b91e;
-    border-radius: 0 0 50% 50%; }
-  .main-container .final-row .capsules-img {
-    width: 90%;
-    height: auto; }
-
-table {
-  border: none; }
-
-/* Responsive */
-@media only screen and (max-width: 600px) {
-  .footer {
-    padding: 8px 32px 24px; } }
+  .main-container .final-row {
+    display: table; }
+    .main-container .final-row .capsule {
+      width: 90%;
+      height: auto;
+      padding: 4px 4px 16px;
+      margin: 0 auto;
+      background: #92b91e;
+      border-radius: 0 0 50% 50%; }
+    .main-container .final-row .capsules-img {
+      width: 90%;
+      height: auto; }
+  .main-container .final-row > div {
+    display: table-cell;
+    vertical-align: middle; }

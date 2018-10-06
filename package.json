@@ -12,6 +12,8 @@
   "dependencies": {
     "email-templates": "^5.0.0",
     "handlebars": "^4.0.12",
-    "nodemailer": "^4.6.8"
+    "node-sass": "^4.9.3",
+    "nodemailer": "^4.6.8",
+    "npm": "^6.4.1"
   }
 }
