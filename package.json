@@ -1,0 +1,17 @@
+{
+  "name": "email_nodejs",
+  "version": "1.0.0",
+  "description": "Demo of email sending in NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-scss": "node-sass --include-path scss scss/app.scss build/css/app.css"
+  },
+  "author": "Guillermo Grajales",
+  "license": "ISC",
+  "dependencies": {
+    "email-templates": "^5.0.0",
+    "handlebars": "^4.0.12",
+    "nodemailer": "^4.6.8"
+  }
+}

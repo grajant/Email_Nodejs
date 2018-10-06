@@ -1,0 +1,177 @@
+/** Font loading **/
+@font-face {
+  font-family: 'Poppins';
+  src: url("../../font/Poppins-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../../font/Poppins-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../../font/Poppins-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../../font/Poppins-SemiBold.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../../font/Poppins-Bold.ttf");
+  font-weight: 700; }
+
+.mail-container {
+  width: 600px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  background-image: -webkit-radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111);
+  background-image: radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111);
+  text-align: center;
+  color: white;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box; }
+
+.mail-container * {
+  box-sizing: border-box;
+  font-family: "Poppins", 'Segoe UI', sans-serif; }
+
+.logo-container {
+  width: 100%; }
+  .logo-container .img-logo {
+    width: 20%;
+    height: auto;
+    margin: 0 10% 0 70%; }
+
+.header {
+  position: relative;
+  background-image: url("https://s3.amazonaws.com/colcafepdnimagenes/01.familia.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 76%;
+  border-radius: 0 0 50% 50%; }
+  .header .img-sello {
+    width: 35%;
+    height: auto;
+    margin: -20% auto 0; }
+
+.footer {
+  border-top: 2px solid #92b91e;
+  background: #222222;
+  width: 100%;
+  padding: 8px 24px 28px;
+  font-family: "Poppins", 'Segoe UI', sans-serif;
+  box-sizing: border-box; }
+  .footer p {
+    font-size: 14px; }
+  .footer span {
+    display: block;
+    font-size: 14px; }
+    .footer span strong {
+      font-size: 18px; }
+
+.main-container {
+  width: 600px;
+  max-width: calc(100% - 48px);
+  margin: 15% auto 0; }
+  .main-container h1 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .main-container h3 {
+    color: #92b91e;
+    font-size: 22px; }
+  .main-container .welcome-row {
+    padding: 8px 0;
+    color: white;
+    border-bottom: 2px dotted white;
+    width: fit-content;
+    margin: auto; }
+    .main-container .welcome-row span {
+      font-size: 1.1em; }
+  .main-container .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 32px; }
+    .main-container .cards-container .card {
+      position: relative;
+      padding: 0;
+      width: 160px; }
+      .main-container .cards-container .card .capsule-container {
+        margin: auto; }
+        .main-container .cards-container .card .capsule-container div {
+          margin: auto;
+          width: 110px;
+          height: 110px;
+          background: #92b91e;
+          border-radius: 0 0 50% 50%;
+          text-align: center;
+          padding: 8px 0 0; }
+          .main-container .cards-container .card .capsule-container div img {
+            width: 60px; }
+          .main-container .cards-container .card .capsule-container div span {
+            display: block;
+            line-height: 14px;
+            font-size: 14px;
+            font-weight: bold; }
+      .main-container .cards-container .card .card-text {
+        padding: 0 8px;
+        font-size: 12.5px;
+        line-height: 14px; }
+        .main-container .cards-container .card .card-text strong {
+          font-size: 14px; }
+    .main-container .cards-container .card:not(:last-of-type) .capsule-container {
+      border-right: 2px dotted white; }
+    .main-container .cards-container .card-border {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100px;
+      border-right: 2px dotted white; }
+  .main-container .dashed-row {
+    width: 60%;
+    margin: 0 auto 32px;
+    position: relative;
+    border: 2px dashed white;
+    border-radius: 10px;
+    padding: 8px 8px 24px; }
+  .main-container .a-btn {
+    display: block;
+    width: 105px;
+    height: 36px;
+    line-height: 36px;
+    margin: -34px auto 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: #92b91e;
+    transform: translateY(-50%); }
+  .main-container .final-row .capsule {
+    width: 90%;
+    height: auto;
+    padding: 4px 4px 16px;
+    margin: 0 auto;
+    background: #92b91e;
+    border-radius: 0 0 50% 50%; }
+  .main-container .final-row .capsules-img {
+    width: 90%;
+    height: auto; }
+
+table {
+  border: none; }
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 8px 32px 24px; } }
