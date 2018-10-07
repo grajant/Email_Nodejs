@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
 
 const email = new EmailTemplate({
     message: {
-        from: 'capsulasexpressnutresa@pragma.com.co'
+        from: 'Cápsulas Express Nutresa <capsulasexpressnutresa@pragma.com.co>'
     },
     send: true,
     transport: transporter,
@@ -41,8 +41,7 @@ const sendEmail = async () => {
                 //to: 'guillo.grajales@yahoo.com'
             },
             locals: {
-                firstName: 'Guillermo',
-                lastName: 'Grajales'
+                firstName: 'Guillermo'
             }
         });
         console.log(result);
