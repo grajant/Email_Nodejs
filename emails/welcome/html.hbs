@@ -16,102 +16,238 @@
     </style>
     <![endif]-->
 </head>
-<body>
+<body style="width: 700px">
 <div class="wrapper">
     <div class="mail-container">
-        <div class="header">
-            <img class="img-banner" src="https://s3.amazonaws.com/colcafepdnimagenes/banner_mail.png"
-                 alt="banner_capsulas_express">
-        </div>
-        <div class="body">
-            <div class="main-container">
-                <div class="welcome-row">
-                    <h1>¡Bienvenido al Club Express!</h1>
-                    <span>El club de los que hacen especial cualquier momento</span>
-                </div>
-
-                <h3>Hola {{firstName}}</h3>
-                <p>¡Ya eres parte del Club Express! Prepárate para disfrutar más cada<br>momento con los beneficios
-                    exclusivos que
-                    tenemos para ti:</p>
-                <div class="cards-container">
-                    <div class="card">
-                        <div class="capsule-container">
-                            <div>
-                                <img src="https://s3.amazonaws.com/colcafepdnimagenes/03.Noticias.png" alt="noticias">
-                                <span>Noticias</span>
-                            </div>
-                        </div>
-                        <p class="card-text">Entérate en primicia<br><strong>de las últimas noticias</strong><br>de nuestra
-                            marca</p>
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+                <td>
+        <![endif]-->
+        <table class="outer" align="center">
+            <!-- ROW Banner -->
+            <tr>
+                <td>
+                    <img class="img-banner" src="https://s3.amazonaws.com/colcafepdnimagenes/banner_mail.png"
+                         alt="banner_capsulas_express">
+                </td>
+            </tr>
+            <!-- ROW Welcome msg -->
+            <tr class="welcome-row">
+                <td class="one-column">
+                    <table style="width: calc(100% - 32px);margin: auto;max-width: 500px;">
+                        <tr>
+                            <td class="inner contents">
+                                <table style="width: fit-content;margin: auto;max-width: 500px;">
+                                    <tr>
+                                        <td class="inner contents bd">
+                                            <span class="h1">¡Bienvenido al Club Express!</span><br>
+                                            <span>El club de los que hacen especial cualquier momento</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- ROW Greeting msg -->
+            <tr class="greeting-row">
+                <td class="one-column">
+                    <table style="width: 100%;margin: auto;max-width: 500px;">
+                        <tr>
+                            <td class="inner contents">
+                                <h3>Hola {{firstName}}</h3>
+                                <p>¡Ya eres parte del Club Express! Prepárate para disfrutar más cada momento con los beneficios
+                                    exclusivos que tenemos para ti:</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- ROW Capsules | 3 columns -->
+            <tr class="cards-row">
+                <td class="three-column">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%">
+                        <tr>
+                            <td width="200" valign="top">
+                    <![endif]-->
+                    <table class="column">
+                        <tr>
+                            <td class="inner">
+                                <table class="contents">
+                                    <tr>
+                                        <td>
+                                            <div class="card">
+                                                <div class="capsule-container">
+                                                    <img src="https://s3.amazonaws.com/colcafepdnimagenes/03.Noticias.png" alt="noticias">
+                                                    <p>Noticias</p>
+                                                </div>
+                                                <p class="card-text">Entérate en primicia<br><strong>de las últimas noticias</strong><br>de nuestra
+                                                    marca</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td><td width="200" valign="top">
+                    <![endif]-->
+                    <table class="column">
+                        <tr>
+                            <td class="inner">
+                                <table class="contents">
+                                    <tr>
+                                        <td>
+                                            <div class="card">
+                                                <div class="capsule-container">
+                                                    <img src="https://s3.amazonaws.com/colcafepdnimagenes/05.Sorpresas.png" alt="sorpresas">
+                                                    <p>Sorpresas</p>
+                                                </div>
+                                                <p class="card-text">Recibe increíbles<br><strong>sorpresas</strong><br>en fechas especiales</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td><td width="200" valign="top">
+                    <![endif]-->
+                    <table class="column">
+                        <tr>
+                            <td class="inner">
+                                <table class="contents">
+                                    <tr>
+                                        <td>
+                                            <div class="card">
+                                                <div class="capsule-container">
+                                                    <img src="https://s3.amazonaws.com/colcafepdnimagenes/04.Recetas.png" alt="recetas">
+                                                    <p>Deliciosas<br>recetas</p>
+                                                </div>
+                                                <p class="card-text">Aprende<br><strong>recetas únicas</strong><br>para llenar de sabor<br>tus
+                                                    bebidas</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                </td>
+            </tr>
+            <!-- ROW Link to page -->
+            <tr class="link-row">
+                <td class="one-column">
+                    <table style="max-width: 300px; margin: auto;">
+                        <tr>
+                            <td class="inner contents dashed-container">
+                                <span>Y muchos beneficios más,<br>descúbrelos visitando nuestro sitio</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contents" style="padding: 8px 0 0;">
+                                <a href="https://capsulasexpressnutresa.com/" target="_blank" class="a-btn">Aquí</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- ROW Capsules img | 2 columns -->
+            <tr class="capsules-row">
+                <td class="two-column">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%">
+                        <tr>
+                            <td width="30%" valign="middle">
+                    <![endif]-->
+                    <!--column to go here-->
+                    <div class="column cm30 v-mid">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner">
+                                    <table class="contents">
+                                        <tr>
+                                            <td>
+                                                <p>Además,<br>por inscribirte</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="green-capsule" src="http://s3.amazonaws.com/colcafepdnimagenes/capsula_verde.png"
+                                                     alt="capsula_recibe"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="card">
-                        <div class="capsule-container">
-                            <div>
-                                <img src="https://s3.amazonaws.com/colcafepdnimagenes/05.Sorpresas.png" alt="sorpresas">
-                                <span>Sorpresas</span>
-                            </div>
-
-                        </div>
-                        <p class="card-text">Recibe increíbles<br><strong>sorpresas</strong><br>en fechas especiales</p>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td><td width="70%" valign="bottom">
+                    <![endif]-->
+                    <!--column to go here-->
+                    <div class="column cm70 v-bott">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner">
+                                    <table class="contents">
+                                        <tr>
+                                            <td style="max-width: 400px;">
+                                                <img class="capsules-img" alt="capsulas_cafe"
+                                                src="https://s3.amazonaws.com/colcafepdnimagenes/02.Capsulas.png">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="card">
-                        <div class="capsule-container">
-                            <div>
-                                <img src="https://s3.amazonaws.com/colcafepdnimagenes/04.Recetas.png" alt="recetas">
-                                <span>Deliciosas recetas</span>
-                            </div>
-                        </div>
-                        <p class="card-text">Aprende<br><strong>recetas únicas</strong><br>para llenar de sabor<br>tus
-                            bebidas</p>
-                    </div>
-                </div>
-                <div class="dashed-row">
-                    <span>Y muchos beneficios más,<br>descúbrelos visitando nuestro sitio</span>
-                </div>
-                <a href="https://capsulasexpressnutresa.com/" target="_blank" class="a-btn">Aquí</a>
-                <div class="final-row">
-                    <div style="width: 30%; margin: 0; padding: 0; display: inline-block">
-                        <span>Además, por inscribirte</span>
-                        <div class="capsule">
-                            <table>
-                                <tr>
-                                    <td colspan="2">*RECIBE</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">5</td>
-                                    <td>CÁPSULAS</td>
-                                </tr>
-                                <tr>
-                                    <td>SURTIDAS</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">DE BIENVENIDA</td>
-                                </tr>
-                            </table>
-
-                        </div>
-                    </div>
-                    <div style="width: 69%; margin: 0; padding: 0; display: inline-block"><img class="capsules-img"
-                                                                                               src="https://s3.amazonaws.com/colcafepdnimagenes/02.Capsulas.png"
-                                                                                               alt="capsulas_cafe"></div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <p>
-                *Las 5 cápsulas surtidas llegarán a tu dirección en un plazo de 15 días<br>
-                hábiles después de la fecha inscripción en nuestro Club Express.
-            </p>
-            <span>Para más información ingresa a</span>
-            <span><strong>www.capsulasexpressnutresa.com</strong></span>
-            <span>o llama a la línea gratuita <strong style="font-size: 14px">018000-51-07-77.</strong></span>
-        </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                </td>
+            </tr>
+            <!-- ROW Footer -->
+            <tr class="footer-row">
+                <td class="one-column">
+                    <table style="width: 100%;margin: auto;max-width: 450px;">
+                        <tr>
+                            <td class="inner contents">
+                                <p class="mg">
+                                *Las 5 cápsulas surtidas llegarán a tu dirección en un plazo de 15 días
+                                hábiles después de la fecha inscripción en nuestro Club Express.
+                                </p>
+                                <p>Para más información ingresa a</p>
+                                <p><strong>www.capsulasexpressnutresa.com</strong></p>
+                                <p>o llama a la línea gratuita <strong style="font-size: 14px">018000-51-07-77.</strong></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
     </div>
 </div>
-
 </body>
 </html>
+
 
 
 

@@ -34,10 +34,11 @@ const email = new EmailTemplate({
 const sendEmail = async () => {
     try {
         const result = await email.send({
-            template: 'tables',
+            template: 'welcome',
             message: {
-                //to: ['glego40_@hotmail.com', 'guillo.grajales@gmail.com']
-                to: 'glego40_@hotmail.com'
+                to: ['glego40_@hotmail.com', 'guillo.grajales@gmail.com', 'guillo.grajales@yahoo.com']
+                //to: 'glego40_@hotmail.com'
+                //to: 'guillo.grajales@yahoo.com'
             },
             locals: {
                 firstName: 'Guillermo',
