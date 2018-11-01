@@ -1,3 +1,4 @@
+/* Font loading */
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
@@ -22,54 +23,10 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* ----------------------
-/           Basics
--------------------------*/
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 100%;
-  background-color: #ffffff;
-}
-table {
-  border: none;
-  border-spacing: 0;
-  font-family: "Poppins", 'Trebuchet MS', 'Tahoma', sans-serif !important;
-  color: white;
-}
-td {
-  padding: 0;
-  text-align: center;
-}
-img {
-  border: 0;
-}
 
 
-
-/*----------------------------
-/*  Mail structure *
-/*---------------------------*/
-.wrapper {
-  width: 100%;
-  table-layout: fixed;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-.mail-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  color: white;
-  background: #fff;
-}
-
+//--------- Overrides ----------//
 .outer {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 600px;
   background-color: #333;
   background-image: -webkit-radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111);
   background-image: radial-gradient(circle farthest-corner at 90% 40%, #666, #444, #111);
@@ -79,33 +36,7 @@ img {
   }
 }
 
-.column {
-  vertical-align: top;
-}
-
-.column.v-mid {
-  vertical-align: middle;
-}
-
-.column.v-bott {
-  vertical-align: bottom;
-}
-
 .one-column {
-  //border-top: 1px solid;
-
-  .text {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
   .contents {
     width: 100%;
     font-size: 14px;
@@ -116,59 +47,13 @@ img {
   }
 }
 
-.two-column {
-  text-align: center;
-  font-size: 0;
-
-  .column {
-    width: 100%;
-    max-width: 300px;
-    display: inline-block;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .column.cm30 {
-    max-width: 200px;
-  }
-
-  .column.cm70 {
-    max-width: 400px;
-  }
-
-  @extend .one-column;
-}
-
-.three-column {
-  text-align: center;
-  font-size: 0;
-  padding: 16px 0;
-
-  .column {
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-  }
-
-  .contents td {
-    width: 200px;
-  }
-
-  @extend .one-column;
-}
-
-
 /*----------------------------------------**
-/  Normar styles
+/  Normal styles
 /---------------------------------------- */
 .img-banner {
   width: 100%;
   height: auto;
 }
-
 
 .welcome-row {
   padding: 8px 0;

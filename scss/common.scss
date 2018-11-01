@@ -1,0 +1,132 @@
+/* ----------------------
+/           Basics
+-------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background-color: #ffffff;
+}
+
+table {
+  border: none;
+  border-spacing: 0;
+  color: white;
+}
+
+td {
+  text-align: center;
+}
+img {
+  border: 0;
+}
+
+/*----------------------------
+/*  Mail structure *
+/*---------------------------*/
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.mail-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+  background: #fff;
+}
+
+.outer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+
+  .inner {
+    //padding: 10px;
+  }
+}
+
+.column {
+  vertical-align: top;
+}
+
+.column.v-mid {
+  vertical-align: middle;
+}
+
+.column.v-bott {
+  vertical-align: bottom;
+}
+
+.one-column {
+  //border-top: 1px solid;
+
+  .text {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .contents {
+    width: 100%;
+    font-size: 14px;
+
+    td {
+      //text-align: center;
+    }
+  }
+}
+
+.two-column {
+  text-align: center;
+  font-size: 0;
+
+  .column {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .column.cm30 {
+    max-width: 200px;
+  }
+
+  .column.cm70 {
+    max-width: 400px;
+  }
+
+  @extend .one-column;
+}
+
+.three-column {
+  text-align: center;
+  font-size: 0;
+  padding: 16px 0;
+
+  .column {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+  }
+
+  .contents td {
+    width: 200px;
+  }
+
+  @extend .one-column;
+}
