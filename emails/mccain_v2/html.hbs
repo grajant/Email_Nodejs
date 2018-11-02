@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" href="/css/common.css" data-inline="data-inline">
-    <link rel="stylesheet" href="/css/mccain.css" data-inline="data-inline"/>
+    <link rel="stylesheet" href="/css/mccain_v2.css" data-inline="data-inline"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,24 +25,29 @@
             <tr>
                 <td>
         <![endif]-->
-        <table class="outer" align="center">
+        <table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+            <!-- ROW Main Image-->
+            <tr>
+                <td style="background: #f5f5f5">
+                    <img class="img-banner" src="https://s3.amazonaws.com/mccains3-img/2Maillanzamiento1.png"
+                         alt="banner_sous_chef">
+                </td>
+            </tr>
             <!-- ROW Greeting -->
             <tr class="greeting-row">
-                <td class="one-column">
-                    <table width="100%">
+                <td class="one-column" style="background: url('https://s3.amazonaws.com/mccains3-img/2Maillanzamiento2.png') no-repeat;">
+                    <table width="100%" cellspacing="0">
                         <tr>
-                            <td class="inner contents">
-                                <h1><i>Hola,</i> {{repName}}</h1>
+                            <td class="inner contents" style="padding: 0 24px 16px;">
+                                <h2>{{repName}},</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="inner contents" style="padding: 24px 24px 112px">
+                              <h1>BIENVENIDO <br>A SOUS CHEF</h1>
                             </td>
                         </tr>
                     </table>
-                </td>
-            </tr>
-            <!-- ROW Main Image-->
-            <tr>
-                <td>
-                    <img class="img-banner" src="https://s3.amazonaws.com/mccains3-img/IMAGEN_PPAL.jpg"
-                         alt="banner_sous_chef">
                 </td>
             </tr>
             <!-- ROW Info -->
@@ -51,13 +56,33 @@
                     <table width="100%">
                         <tr>
                             <td class="inner contents">
-                                <p class="big-p">
-                                    Para nosotros tu restaurante es importante, por eso te invitamos a participar de <strong>Sous Chef.</strong>
-                                </p>
-                                <p class="small-p">
-                                    El programa de fidelización que ha sido pensado para ofrecerte beneficios exclusivos para que
-                                    <strong>tu negocio no pare de crecer.</strong>
-                                </p>
+                                <img src="https://s3.amazonaws.com/mccains3-img/adorno_titulos.png" alt="adorno"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="big-p">
+                                Ahora que ya eres parte, descubre cómo disfrutar
+                                de todos los beneficios que tenemos pensados para
+                                ayudarte con tu restaurante.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- ROW Link button -->
+            <tr class="link-row">
+                <td class="one-column">
+                    <table width="100%">
+                        <tr>
+                            <td class="inner contents">
+                                Para acceder a tu cuenta haz click
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="inner contents">
+                                <a href="https://d33piazo2y3avk.cloudfront.net" target="_blank">
+                                    <img src="https://s3.amazonaws.com/mccains3-img/boton_mail.png" alt="boton_aquí"/>
+                                </a>
                             </td>
                         </tr>
                     </table>
@@ -68,54 +93,51 @@
                 <td class="one-column" style="padding: 0 24px;">
                     <table width="100%">
                         <tr>
-                            <td class="head-table">
-                                Estos son tus datos de registro
+                            <td class="head-table" colspan="2">
+                                Estos son tus datos para ingresar:
                             </td>
                         </tr>
                         <tr>
-                            <td class="body-table" style="padding-top: 24px">
-                                <label>Código de identificación</label>
-                                <h4>XXXXXXXXXXXXX</h4>
+                            <td class="label">
+                                Usuario:
+                            </td>
+                            <td class="text">
+                                {{username}}
                             </td>
                         </tr>
                         <tr>
-                            <td class="body-table">
-                                <label>Código de identificación</label>
-                                <h4>XXXXXXXXXXXXX</h4>
+                            <td class="label">
+                                Contraseña:
                             </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- ROW SMS Info -->
-            <tr>
-                <td class="one-column">
-                    <table width="100%">
-                        <tr>
-                            <td class="inner contents">
-                                <p class="small-p">
-                                    Te estaremos enviando un SMS para que actives tu cuenta y disfrutes de los
-                                    grandes beneficios que tenemos preparados para ti.
-                                </p>
+                            <td class="text">
+                                {{password}}
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <!-- Row Links Social Network & Copyright -->
-            <tr class="link-row">
+            <!-- ROW Info -->
+            <tr class="info-row">
+                <td class="one-column">
+                    <table width="100%">
+                        <tr>
+                            <td class="small-p">
+                                <a href="https://es.surveymonkey.com/r/GTHLPP9">Aquí</a>
+                                encontrarás una breve encuesta que te haremos para poder
+                                conocerte mejor a ti y a las necesidades de tu negocio,
+                                así podremos ofrecerte los mejores beneficios.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Row thanks -->
+            <tr class="thanks">
                 <td class="one-column">
                     <table width="100%">
                         <tr>
                             <td class="inner contents">
-                                <a target="_blank" href=""><img src="https://s3.amazonaws.com/mccains3-img/fb_icon.png" alt="fb_logo"/></a>
-                                <a target="_blank" href=""><img src="https://s3.amazonaws.com/mccains3-img/twitter_icon.png" alt="twitter_logo"/></a>
-                                <a target="_blank" href=""><img src="https://s3.amazonaws.com/mccains3-img/instagram_icon.png" alt="instagram_logo"/></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="inner contents">
-                                Copyright &copy; 2018 <strong>McCain</strong>. All Rights Reserved.
+                                ¡Gracias por confiar en nosotros!
                             </td>
                         </tr>
                     </table>
